@@ -50,20 +50,20 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {0.6}Android}{x}{section.0.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {0.6.1}Security}{x}{subsection.0.6.1}
+\contentsline {subsection}{\numberline {0.6.1}Architektur}{x}{subsection.0.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {0.6.2}Architektur}{x}{subsection.0.6.2}
+\contentsline {subsection}{\numberline {0.6.2}Security}{xi}{subsection.0.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {0.6.3}Probleme}{x}{subsection.0.6.3}
+\contentsline {subsection}{\numberline {0.6.3}Probleme}{xi}{subsection.0.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Varianten}{xi}{chapter*.10}
+\contentsline {chapter}{Varianten}{xii}{chapter*.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {0.7}Linux Manipulation}{xi}{section.0.7}
+\contentsline {section}{\numberline {0.7}Linux Manipulation}{xii}{section.0.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {0.8}MDM Only}{xi}{section.0.8}
+\contentsline {section}{\numberline {0.8}MDM Only}{xii}{section.0.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {0.9}MDM + Container}{xi}{section.0.9}
+\contentsline {section}{\numberline {0.9}MDM + Container}{xii}{section.0.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {0.10}Samsung Knox}{xi}{section.0.10}
+\contentsline {section}{\numberline {0.10}Samsung Knox}{xii}{section.0.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Auswahl \& Konzept}{xii}{chapter*.11}
+\contentsline {chapter}{Auswahl \& Konzept}{xiii}{chapter*.11}

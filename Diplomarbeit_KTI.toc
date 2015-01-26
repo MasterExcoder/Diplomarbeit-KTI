@@ -11,3 +11,33 @@
 \contentsline {chapter}{Erkl\IeC {\"a}rung}{iii}{chapter*.1}
 \defcounter {refsection}{0}\relax 
 \select@language {ngerman}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Einleitung}{v}{chapter*.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {0.1}Warum?}{v}{section.0.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {0.2}Ursprungsproblem}{v}{section.0.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {0.3}Vorgehensweise}{v}{section.0.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Studie}{vi}{chapter*.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {0.4}Android}{vi}{section.0.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {0.4.1}Security}{vi}{subsection.0.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {0.4.2}Architektur}{vi}{subsection.0.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {0.4.3}Probleme}{vi}{subsection.0.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Varianten}{vii}{chapter*.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {0.5}Linux Manipulation}{vii}{section.0.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {0.6}MDM Only}{vii}{section.0.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {0.7}MDM + Container}{vii}{section.0.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {0.8}Samsung Knox}{vii}{section.0.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Auswahl \& Konzept}{viii}{chapter*.6}

@@ -41,7 +41,7 @@
   >
 ]>
 <requests version="1.0">
-  <internal package="biblatex" priority="9" active="0">
+  <internal package="biblatex" priority="9" active="1">
     <generic>latex</generic>
     <provides type="dynamic">
       <file>Diplomarbeit_KTI.bcf</file>
@@ -62,7 +62,7 @@
       <file>german.lbx</file>
     </requires>
   </internal>
-  <external package="biblatex" priority="5" active="0">
+  <external package="biblatex" priority="5" active="1">
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
@@ -79,6 +79,9 @@
     </provides>
     <requires type="dynamic">
       <file>Diplomarbeit_KTI.bcf</file>
+    </requires>
+    <requires type="editable">
+      <file>bibliography.bib</file>
     </requires>
   </external>
 </requests>

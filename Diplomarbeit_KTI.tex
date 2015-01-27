@@ -1,5 +1,7 @@
 \documentclass[diplom,german]{hgbthesis}
 
+\bibliography{bibliography}
+
 \graphicspath{images/}
 
 \begin{document}
@@ -16,16 +18,16 @@
 \maketitle
 \tableofcontents
 
-%Kurzfassung
 \include{Kapitel/kurzfassung}
-
 
 \include{Kapitel/einleitung}
 
+\mainmatter
 \include{Kapitel/studie}
 \include{Kapitel/varianten}
 \include{Kapitel/auswahl_konzept}
 
+\MakeBibliography
 
 \end{document}
 

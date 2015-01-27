@@ -203,6 +203,7 @@
 \end{titlepage}%
 }
 
+%----------------------------Anpassung für HTL Spengergasse abt. HIF----------------
 \newcommand{\@datitel}{%
 \begin{titlepage}%
 \begin{german}
@@ -221,11 +222,11 @@
 	\vskip 15mm%
 	{\Large D\,I\,P\,L\,O\,M\,A\,R\,B\,E\,I\,T}%
 	\vskip 4mm%
-	{\large eingereicht am} \vskip 1mm {Fachhochschul-Diplomstudiengang}%
+	{\large eingereicht in der} {Abteilung}%
 	\vskip 4mm%
 	{\large\@studiengang}%
 	\vskip 4mm%
-	{\large in \@studienort}%
+	{\large der \@studienort}%
 	\vskip 16mm%
 	{\large im \monthname[\value{@abgabemonat}] \arabic{@abgabejahr}}%
 \end{center}%
@@ -233,6 +234,7 @@
 \end{german}
 \end{titlepage}%
 }
+%--------------------------------------------------------------------------------------
 
 \newcommand{\@prtitel}{%
 \begin{titlepage}%
@@ -457,7 +459,7 @@ acknowledged. I further declare that this or similar work has not been submitted
 		pdftitle={\@title},
 		pdfauthor={\@author},
 		pdfsubject={\@studiengang, \@studienort},
-		pdfcreator={LaTeX using class hgbthesis},
+		pdfcreator={},
 		pdfproducer={},
 		pdfkeywords={}
 }%

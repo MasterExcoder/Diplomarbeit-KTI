@@ -4,9 +4,10 @@ Android ist, im Gegensatz zu anderen mobilen Betriebssystemen auf dem Markt, ein
 Ein so hoher Grad an Offenheit birgt jedoch auch gewisse Sicherheitsrisiken und öffnet Angriffsvektoren. Um diese Gefahren besser zu verstehen sollte man sich eingehend mit der Android Architektur und dem darin enthaltenen Sicherheitskonzept befassen.
 
 \subsection{Architektur}
+\begin{figure}[H]
 \includegraphics[scale=0.7]{Images/android_stack}
-%\caption[Android Architektur Schichtenmodell]{Android Architektur }
-\paragraph*{}
+\caption{Android Systemarchitektur}
+\end{figure}
 Wie in Abbildung 1 zu sehen ist, bildet der Linux Kernel die unterste Schicht der Architektur. Auf ihm baut das gesamte Betriebssystem mitsamt aller Sicherheitskonzepte auf. Der Kernel stellt die Brücke zwischen Hard- und Software dar und enthält die Treiber für diverse andere Komponenten eines Smartphones wie beispielsweise Modem, GPS Empfänger, Kamera, etc… 
 \paragraph*{}
 In der darüber liegende Ebene sind die Android Libaries sowie die Runtime, also die „Dalvik Virtual Machine“ zu finden. \newline

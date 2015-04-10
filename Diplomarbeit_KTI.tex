@@ -1,11 +1,18 @@
 \documentclass[diplom,german]{hgbthesis}
 
 \usepackage{geometry}
-\geometry{a4paper,left=30mm,right=30mm, top=2cm, bottom=2cm}
+\usepackage{titlesec}
+\geometry{a4paper,left=30mm,right=30mm, top=2.5cm, bottom=2cm}
 
 \bibliography{bibliography}
 
 \graphicspath{images/}
+
+%--------surpress chapter headings 'Chapter N'----------
+\titleformat{\chapter}[display]
+{\bfseries\huge}                                            
+{\filright}
+{1ex}{}[]
 
 \begin{document}
 \pagenumbering{arabic}

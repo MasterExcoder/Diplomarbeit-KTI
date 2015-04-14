@@ -75,3 +75,58 @@ Folgende Daten müssen bereit stehen bzw. eingerichtet werden:
 	\end{itemize}
 \end{itemize}
 Ist die Einrichtung erfolgt, kann man das System nach einem Neustart bereits einsetzen. Während dem Evaluierungsprozess sind dem Projektteam allerdings einige wichtige Details aufgefallen. Ein funktionierender externer Hostname ist von höchster Wichtigkeit, weil ohne ihn zwar die Einrichtung der Software auf den mobilen Endgeräten funktioniert, leider jedoch die Verbreitung von Konfigurationen versagt. Da jedoch 99 Prozent aller modernen Unternehmen über solche Möglichkeiten verfügen sollten, dürfte dies im realen Betrieb weniger problematisch ausfallen. Hervorzuheben ist hierbei die hervorragende Dokumentation, die MobileIron für den Installationsprozess zur Verfügung stellt. Auf deren Website findet sich eine Sammlung an Dokumenten, welche den Administrator am Anfang zwar überwältigen könnten, aber sich als eine schnell zu durchforstende Sammlung an bebilderten Skripten zur Einrichtung sämtlicher Funktionen herausstellen. Generell lässt sich die Webplattform, welche MobileIron hier zur Verfügung stellt, gut bedienen und bietet Informationen zu den verschiedenen Implementierungsszenarien und Komponenten des Systems. So findet man sich nach kurzer Zeit bereits relativ gut zurecht und weiß wo man suchen muss, um die benötigte Information zu finden.
+\subsection{Features}
+\subsubsection{Key-Features}
+In diesem Teil werden die wichtigsten von MobileIron gebotenen Features beleuchtet und erklärt. Die folgende Liste stellt die wichtigsten Funktionen dar, welche während des Evaluierungsprozesses festgestellt werden konnten:
+\begin{itemize}
+	\item MDM System
+	\item Management von verschieden vielen Geräten
+	\begin{itemize}
+		\item Jeder Gerätetyp ist möglich, egal ob Smartphone, Tablet oder Laptop
+		\item Lokalisierung sämtlicher eingebundener Geräte
+		\item Leicht aufzusetzen und zu verwenden
+		\begin{itemize}
+			\item Installation einer einzigen App ist notwendig, um das Gerät in die Plattform einzubinden
+		\end{itemize}
+		\item Verwendbar ab dem ersten Gerät
+		\item Mehrsprachig
+		\item Geringe Wartungskosten
+	\end{itemize}
+	\item Konfiguration der eingebundenen Endgeräte
+	\begin{itemize}
+		\item Vorkonfiguration von Email-Konten und sonstigem (Wifi, VPN, etc.)
+		\begin{itemize}
+			\item Der Angestellte muss dies nicht selbst erledigen
+			\item Keine Chance einer Fehlkonfiguration
+			\item Verteilbar auf hunderte Geräte innerhalb von Sekunden
+		\end{itemize}
+	\end{itemize}
+	\item Statistiken
+	\begin{itemize}
+		\item Verfügbare Statistiken 
+		\begin{itemize}
+			\item Gerätestatus
+			\item Kompromitierungsstand
+			\item Betriebssystem
+			\item Betriebssystemversion
+			\item Zugehörigkeit (gehört dem Unternehmen oder dem Angestellten)
+			\item Netzbetreiber (3, A1, Telering, etc...)
+			\item Registrierungszustand 
+		\end{itemize}
+		\item Logging von Events
+	\end{itemize}
+\end{itemize}	
+	
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+\textbf{Device Actions} & \textbf{App -} & \textbf{Policy -} & \textbf{Space -}          & \textbf{Status -}      \\ \hline
+Register                & Install        & Activate          & Add Space                 & Not started            \\ \hline
+Wipe                    & Uninstall      & Modify            & Remove Space              & In progress            \\ \hline
+Lock                    & Set setting    & Deactivate        & Change Space Priorization & Completed successfully \\ \hline
+Retire                  & Unset setting  &                   & Assign Space Admin        & Failed                 \\ \hline
+                        &                &                   & Delete Space Admin        &                        \\ \hline
+\end{tabular}
+\caption{Event Logs}
+\end{table}

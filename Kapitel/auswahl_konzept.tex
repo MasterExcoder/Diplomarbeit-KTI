@@ -1,2 +1,25 @@
 \chapter{Auswahl \& Konzept}
-
+\section{Einleitung}
+\paragraph*{•}
+Dieser Untersuchungsbericht dient dazu der Firma Kapsch BusinessCom AG eine Empfehlung für ein bei deren Kunden einzusetzendes Managementsystem für Tablets auf Basis Android auszusprechen. Diese Plattform muss gewissen Vorgaben des Unternehmens entsprechen, welche in der Anfangsphase des Projekts definiert wurden. Nach anfänglichen Untersuchungen konnte des Projektteam vier Kandidaten für Betriebsplattformen in die engere Auswahl ziehen. Diese vier Systeme wurden bezüglich ihres Nutzes für die Absichten der Firma Kapsch untersucht, dokumentiert und in diesem Untersuchungsbericht zusammengefasst. Bei diesen potentiell einsetzbaren Systemen handelt es sich um:
+\begin{itemize}
+	\item Linux Manipulation
+	\item Mobile Device Management
+	\item Mobile Device Management + Container Technologien
+	\item Samsung Knox
+\end{itemize}
+Diese werden in diesem Bericht detailliert dargestellt und es wird auf deren spezifische Stärken und Schwächen eingegangen. Am Ende stellt eine Nutzwertanalyse einen Vergleich der Systeme dar, an Hand derer das abschließende Fazit und die damit einhergehende Empfehlung erfolgen. Damit kann die Kapsch BusinessCom AG dann entscheiden, ob und wenn wie sie das System für ihre zukünftigen Projekte einsetzen können. 
+\section{Linux Manipulation}
+\subsection{Allgemein}
+\paragraph*{}
+Dieser Teil befasst sich mit der Veränderung des Grundsystems eines jeden Android Geräts. Dieses Grundsystem basiert auf dem Open Source Betriebssystem Linux und existiert dabei in einer für Mobilgeräte angepassten Form. In seiner Standardimplementation bietet es zwar einige Funktion zur Erhöhung der Gerätesicherheit, jedoch nicht genügend, um es in einem betrieblichen Umfeld einzusetzen. Da Linux ein Open Source System ist, darf der Source Code von jedem angesehen und nach eigenen Wünschen verändert werden. Und genau hier setzt die Methode der Linuxmanipulation an. In dem man den Source Code so verändert, dass bestimmte Teile des Betriebssystems unzugänglich gemacht oder verschlüsselt werden, ist es möglich den späteren Benutzer vor unabsichtlichen Änderungen am System zu bewahren, welche den reibungslosen Betrieb stören könnten. Das bedeutet, dass dadurch ein vollkommen an die Bedürfnisse des Kunden angepasstes Betriebssystem möglich wäre. Um sich einen besseren Eindruck davon zu verschaffen, wie diese Manipulationen letztendlich aussehen, lohnt es sich auf die diversen frei am Markt erhältlichen Derivate zu werfen. Bekannte Beispiele dafür wären:
+\begin{itemize}
+	\item CyanogenMod
+	\item Android AOSP
+	\item Paranoid Android
+	\item Dirty Unicorns
+	\item etc.
+\end{itemize}
+Zwar sind diese nicht mit securitytechnischen Absichten entwickelt worden, aber sie zeigen trotzdem auf was mit einer Menge an Entwicklungsaufwand möglich ist. Da aber durch die tiefgreifenden Eingriffe in das System eines Android Gerätes auch die Garantieansprüche verloren gehen, ist das Projektteam zu einem schnellen Fazit zu kommen.
+\subsection{Schlussfolgerung}
+Die Methode der Linuxmanipulation ist für die Zwecke der Kapsch leider absolut nicht einsetzbar dar sich bei ihr gewisse Konflikte bezüglich Garantieanspruch und Kosten ergeben. Zwar wären über diese Methode sämtliche Anforderungen an das Endprodukt erfüllbar, jedoch bedarf es dazu eines so großen Entwicklungsaufwands, dass dieser sich in einem dermaßen hohen Endkundenpreis niederschlagen würde, welcher von kaum einem Unternehmen zu bezahlen wäre. Denn nicht nur die Beschäftigung einer Vielzahl von Entwicklern über einen langen Zeitraum hinweg, sondern auch der anfallende Support für das Produkt würde sich selbst für ein großes Unternehmen wie Kapsch nicht rentieren. Ein weiteres großes Manko dieser Methode ist die verfallende Garantie für die Hardware. Egal mit welchen Android Tablet diese Software ausgeliefert werden würde, sobald eine Veränderung der darauf vorinstallierten Software stattfindet, gehen sämtliche Garantieansprüche an den Hersteller verloren. Bei der geplanten Menge an ausgelieferten Geräten durch die Kapsch, wäre dies nicht vertretbar. Für einen industriellen Einsatzzweck ist die Variante daher absolut nicht geeignet und der damit einhergehende Aufwand würde sich nur durch einen extrem hohen Verkaufspreis ausgleichen lassen. Somit bleibt dem Projektteam nichts anderes zu sagen, als, dass diese Variante nicht passend für die Absichten der Kapsch ist.

@@ -1,5 +1,4 @@
 \chapter{Varianten}
-
 %-------------------------------Linux Manipulation------------------------------------
 \section{Linux Manipulation}
 \subsection{Allgemein}
@@ -16,6 +15,7 @@ Zwar sind diese nicht mit securitytechnischen Absichten entwickelt worden, aber 
 \subsection{Schlussfolgerung}
 Die Methode der Linuxmanipulation ist für die Zwecke der Kapsch leider absolut nicht einsetzbar dar sich bei ihr gewisse Konflikte bezüglich Garantieanspruch und Kosten ergeben. Zwar wären über diese Methode sämtliche Anforderungen an das Endprodukt erfüllbar, jedoch bedarf es dazu eines so großen Entwicklungsaufwands, dass dieser sich in einem dermaßen hohen Endkundenpreis niederschlagen würde, welcher von kaum einem Unternehmen zu bezahlen wäre. Denn nicht nur die Beschäftigung einer Vielzahl von Entwicklern über einen langen Zeitraum hinweg, sondern auch der anfallende Support für das Produkt würde sich selbst für ein großes Unternehmen wie Kapsch nicht rentieren. Ein weiteres großes Manko dieser Methode ist die verfallende Garantie für die Hardware. Egal mit welchen Android Tablet diese Software ausgeliefert werden würde, sobald eine Veränderung der darauf vorinstallierten Software stattfindet, gehen sämtliche Garantieansprüche an den Hersteller verloren. Bei der geplanten Menge an ausgelieferten Geräten durch die Kapsch, wäre dies nicht vertretbar. Für einen industriellen Einsatzzweck ist die Variante daher absolut nicht geeignet und der damit einhergehende Aufwand würde sich nur durch einen extrem hohen Verkaufspreis ausgleichen lassen. Somit bleibt dem Projektteam nichts anderes zu sagen, als, dass diese Variante nicht passend für die Absichten der Kapsch ist.
 
+\newpage
 %--------------------------------------MDM------------------------------------
 \section{Mobile Device Management (MDM)}
 \subsection{Allgemein}
@@ -166,8 +166,7 @@ MobileIron bietet die Möglichkeit seine Vielfalt an Features zu erweitern, inde
 \end{itemize}
 Nachdem sich das Projektteam in diese vertieft hatte, hat es erkannt, dass diese Applikationen eine sogenannte Containertechnologie einsetzen und somit nicht Bestandteil eines standardmäßigen MDM-Systems sind. Daher werden diese in einem anderen Teil des Evaluierungsprozesses behandelt, welcher „MDM+Container“ heißt. Eine weitere Zusatzfunktion, die MobileIron bietet, sind „ActiveSync Policies“. Diese stellen dabei einfach nur durchgehend upgedatete Policies dar, welche bei einer Verletzung sofort Alarm schlagen.
 
-
-
+\newpage
 %----------------------------MDM + Container--------------------------------
 \section{MDM + Container}
 \subsection{MobileIron Containertechnologie}
@@ -232,4 +231,48 @@ Bei der Benutzung von Apps@Work unterscheidet man zwischen 3 verschiedenen Mögl
 Die wohl geläufigste Art Apps auf ein Android Device zu implementieren ist das Herunterladen mittels dem Google Play Store.
 \paragraph*{}
 Der theoretische Ablauf ist folgender: Der IT Administrator tätigt einen Vorschlag für eine ausgewählt App des Google Play Store und hat somit eine Freigabe für den Download dieser App. In unserem Anwendungsfall trifft diese Lösung nicht zu, da der Google Play Store einzig und allein bei Verwendung eines Google Accounts auf dem Device funktioniert. Die Verwendung eines Google Accounts ist in unserem Fall jedoch nicht zielführend, da weitere Sicherheitsprobleme auftreten würden. Daraus ergibt sich die zweite Variante zum Management der auf den Devices installierten Apps anzuwenden. Die In-house Apps basieren hauptsächlich auf selbst entwickelten Applikationen, welche zum Bespiel das Unternehmen selbst in Auftrag gegeben hat. Für die Freischaltung zum Download dieser durch die User benötigt man die APK der App, welcher der IT Administrator zunächst selbst hochladen muss. Weiters kann man mittels Benutzung von In-house Apps ebenfalls zum Teil Apps installieren, welche im Google Play Store verfügbar sind. Voraussetzung dafür ist der rechtmäßige Besitz der APK Files der Apps.
+
+\newpage
+%-----------------------------Samsung Knox----------------------
+\section{Samsung Knox}
+Dieser Abschnitt beschäftigt sich mit dem Einsatz von Samsung Knox als System für potentielle Kunden von der Firma Kapsch. Hier findet sich sowohl Informationen zu Samsung Knox im Allgemeinen, als auch darüber, welche der von der Firma Kapsch erwünschten Features mit Samsung Knox realisierbar sind und welche nicht. Außerdem wird noch auf die Bedienbarkeit und die Installation eingegangen.
+\subsection{Informationen der getesteten Software}
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|p{10cm}|}
+\hline
+\textbf{Name}          & Samsung Knox                                                                                           \\ \hline
+\textbf{Hersteller}    & Samsung
+\\ \hline
+\textbf{Version}       & 2.1
+\\ \hline
+\textbf{Datum}         & 08.07.2014                                                                                               \\ \hline
+\textbf{Preis}         & 
+
+\begin{itemize}
+	\item Express(E): Free but limited to 250 seats
+	\item Premium(P): USD \$1 MSRP per device/month
+	\item Workspace(W): USD \$3.60 MSRP per device/month
+\end{itemize}
+                                                                                                          \\ \hline
+\textbf{Website}       & https://www.samsungknox.com/de 
+\\ \hline
+\textbf{Dokumentation} &                                                                      \\ \hline
+\end{tabular}
+\caption{Samsung Knox Übersicht}
+\end{table}
+
+Samsung Knox ist eine Sammlung Business-orientierter Sicherheitsfunktionen für Android-Geräte von Samsung. Das System, welches auf SE for Android basiert, ist speziell auf die Bedürfnisse von Unternehmen in Hinsicht auf die Sicherheit der Endgeräte ausgerichtet.
+
+\subsection{Samsung Knox Bestandteile}
+Um wirklich erklären zu können was Samsung Knox ist, muss man es zuerst einmal in seine 3 Hauptbestandteile unterteilen.
+\subsubsection{Platform Security}
+In jedem Samsung Gerät ist ein physischer Hardware Chip eingebaut, welcher automatisch einen höheren Schutz für Samsung Geräte bieten soll. Mittels diesem Chip ist es Samsung möglich, bis in die tiefste Software-Schicht eines auf Android basierenden Geräts einzugreifen.
+\begin{figure}[H]
+\includegraphics[scale=0.9]{Images/samsung_knox_platform_security}
+\caption{Samsung Knox Platform Security}
+\end{figure}
+In der Grafik links sieht man den groben Aufbau eines Android Systems.In der Grafik rechts sieht man die Technologien, mit deren Hilfe es Samsung möglich ist in die Schichten einzugreifen.
+\paragraph{Kerntechnologien der Platform Security}
+
 

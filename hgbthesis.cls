@@ -380,12 +380,12 @@ im\\
 
 \newcommand{\@erklaerungsseiteDe}{%
 \begin{german}
-\chapter{Erklärung}
+\chapter*{Eidesstattliche Erklärung}
 \noindent
 %Standardfassung der FH-OÖ ab 04.04.2012:
-Ich erkläre eidesstattlich, dass ich die vorliegende Arbeit selbstständig und ohne fremde Hilfe verfasst, 
+Wir erklären eidesstattlich, dass wir die vorliegende Arbeit selbstständig und ohne fremde Hilfe verfasst, 
 andere als die angegebenen Quellen nicht benutzt und die den benutzten Quellen entnommenen Stellen als 
-solche gekennzeichnet habe. Die Arbeit wurde bisher in gleicher oder ähnlicher Form keiner anderen 
+solche gekennzeichnet haben. Die Arbeit wurde bisher in gleicher oder ähnlicher Form keiner anderen 
 Prüfungsbehörde vorgelegt.
 \par
 \vspace{10mm}

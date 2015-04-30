@@ -394,7 +394,24 @@ Prüfungsbehörde vorgelegt.
 \par
 \vspace{12mm}
 \noindent
-\@author
+%-----Unterschriftenfeld
+\parbox{5cm}{\centering\hrule\medskip Sebastian Götze}
+\hspace{20mm}
+\parbox{5cm}{\centering\hrule\medskip Samuel Hammer}
+\noindent
+\par
+\vspace{15mm}
+\noindent
+\parbox{5cm}{\centering\hrule\medskip Michael Kaufmann}
+\hspace{20mm}
+\parbox{5cm}{\centering\hrule\medskip Konstanze Müller}
+\noindent
+\par
+\vspace{15mm}
+\noindent
+\parbox{5cm}{\centering\hrule\medskip Philip Steinhäuser}
+%-----
+%\@author
 \end{german}
 }
 

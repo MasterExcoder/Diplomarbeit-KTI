@@ -382,11 +382,7 @@ im\\
 \begin{german}
 \chapter*{Eidesstattliche Erklärung}
 \noindent
-%Standardfassung der FH-OÖ ab 04.04.2012:
-Ich erkläre eidesstattlich, dass ich die vorliegende Arbeit selbstständig und ohne fremde Hilfe verfasst, 
-andere als die angegebenen Quellen nicht benutzt und die den benutzten Quellen entnommenen Stellen als 
-solche gekennzeichnet habe. Die Arbeit wurde bisher in gleicher oder ähnlicher Form keiner anderen 
-Prüfungsbehörde vorgelegt.
+Ich erkläre an Eids statt, dass ich die vorliegende Diplomarbeit selbstständig und ohne fremde Hilfe verfasst, andere als die angegeben Quellen und Hilfsmittel nicht benutzt und die den benutzten Quellen wörtlich und inhaltlich entnommenen Stellen als solche erkenntlich gemacht habe.
 \par
 \vspace{10mm}
 \noindent

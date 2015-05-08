@@ -16,7 +16,6 @@
 {1ex}{}[]
 
 \begin{document}
-\pagenumbering{arabic}
 
 \title{KTI - Kapsch Tablet Infrastructure}
 \logofile{Images/kti_logo}
@@ -28,6 +27,7 @@
 %\maketitle
 \includepdf{da_titelseite}
 
+\frontmatter
 \include{leerseite}
 \include{Kapitel/kurzfassung}
 \newpage
@@ -36,6 +36,8 @@
 \setcounter{secnumdepth}{5}
 \tableofcontents
 
+\mainmatter
+\setcounter{page}{1}
 \include{Kapitel/einleitung}
 \include{Kapitel/studie}
 \include{Kapitel/varianten}
@@ -50,7 +52,6 @@
 \addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
 \listoftables
 \addcontentsline{toc}{chapter}{Tabellenverzeichnis}
-
 
 \include{Kapitel/anhang}
 

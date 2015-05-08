@@ -12,6 +12,7 @@ Dieser Teil befasst sich mit der Veränderung des Grundsystems eines jeden Andro
 	\item etc.
 \end{itemize}
 Zwar sind diese nicht mit securitytechnischen Absichten entwickelt worden, aber sie zeigen trotzdem auf was mit einer Menge an Entwicklungsaufwand möglich ist. Da aber durch die tiefgreifenden Eingriffe in das System eines Android Gerätes auch die Garantieansprüche verloren gehen, ist das Projektteam zu einem schnellen Fazit zu kommen.
+\newpage
 \subsection{Schlussfolgerung}
 Die Methode der Linuxmanipulation ist für die Zwecke der Kapsch leider absolut nicht einsetzbar dar sich bei ihr gewisse Konflikte bezüglich Garantieanspruch und Kosten ergeben. Zwar wären über diese Methode sämtliche Anforderungen an das Endprodukt erfüllbar, jedoch bedarf es dazu eines so großen Entwicklungsaufwands, dass dieser sich in einem dermaßen hohen Endkundenpreis niederschlagen würde, welcher von kaum einem Unternehmen zu bezahlen wäre. Denn nicht nur die Beschäftigung einer Vielzahl von Entwicklern über einen langen Zeitraum hinweg, sondern auch der anfallende Support für das Produkt würde sich selbst für ein großes Unternehmen wie Kapsch nicht rentieren. Ein weiteres großes Manko dieser Methode ist die verfallende Garantie für die Hardware. Egal mit welchen Android Tablet diese Software ausgeliefert werden würde, sobald eine Veränderung der darauf vorinstallierten Software stattfindet, gehen sämtliche Garantieansprüche an den Hersteller verloren. Bei der geplanten Menge an ausgelieferten Geräten durch die Kapsch, wäre dies nicht vertretbar. Für einen industriellen Einsatzzweck ist die Variante daher absolut nicht geeignet und der damit einhergehende Aufwand würde sich nur durch einen extrem hohen Verkaufspreis ausgleichen lassen. Somit bleibt dem Projektteam nichts anderes zu sagen, als, dass diese Variante nicht passend für die Absichten der Kapsch ist.
 
@@ -28,7 +29,6 @@ MDM bezeichnet einen von der Open Mobile Alliance (OMA) festgelegten industriell
 	\item Cisco Meraki
 	\item MaaS360
 	\item AirWatch
-	\item etc.
 \end{itemize}
 Bestandteile dieser Softwarelösung sind eine Serverkomponente und die verschiedenen mobilen Clients. Der Server dient dabei dazu die Konfigurationen und Statistiken für die Geräte zu halten und zu verwalten. Er sendet auch, auf dem MDM-Standard basierende, Management Kommandos an die Clients aus, wenn sich ein Parameter in deren Konfiguration verändert hat. War es am Anfang der MDM-Systeme noch notwendig das Gerät dazu physisch mit dem Server zu verbinden, geschieht dies heute vollautomatisch über Netzwerkverbindungen. Die implementierten Funktionen können zum Beispiel eine over-the-air (OTA) Verteilung von Applikationen, Daten oder Konfigurationen sein. So braucht ein Administrator nicht auf 100 Geräten das Wifi-Netzwerk einrichten, sondern kann per Knopfdruck diese Konfiguration auf alle im System registrierten Geräte verteilen.  Auch in Punkto Sicherheit bieten MDM-Systeme einige Möglichkeiten und deshalb sind sie so interessant für die Zukunftspläne der Firma Kapsch. So bieten diese Systeme die Möglichkeit Passwortrichtlinien zu setzen oder sogar ganze Teile des Betriebssystems zu sperren, damit diese für den Benutzer nicht zugänglich sind. Dadurch soll die Anfälligkeit für Fehler im Berufsumfeld gesenkt und ein ordentlicher Arbeitsablauf genehmigt werden.
 \subsection{Informationen der getesteten Software}
@@ -54,16 +54,16 @@ Folgende Daten müssen bereit stehen bzw. eingerichtet werden:
 	\item IP-Adresse
 	\item Externer Hostname \textbf{(Sehr wichtig, weil die mobilen Geräte den Server von außerhalb erreichen müssen)}
 	\item Command Line Interface Passwort
-	\item Administratorname und -passwort
+	\item Administratorname und -Passwort
 	\item Mind. 1 physikalisches Interface
 	\item Subnetzmaske
 	\item Default Gateway
-	\item Mind. 1 zu erreichender DNS-Server
+	\item Mind. 1 zu erreichender DNS\footnote{Domain Name System}-Server
 	\item Wahlweise
 	\begin{itemize}
-		\item SSH-Zugriff
+		\item SSH\footnote{Secure Shell}-Zugriff
 		\item Telnet Zugriff
-		\item NTP
+		\item NTP\footnote{Network Time Protocol}
 	\end{itemize}
 \end{itemize}
 Ist die Einrichtung erfolgt, kann man das System nach einem Neustart bereits einsetzen. Während dem Evaluierungsprozess sind dem Projektteam allerdings einige wichtige Details aufgefallen. Ein funktionierender externer Hostname ist von höchster Wichtigkeit, weil ohne ihn zwar die Einrichtung der Software auf den mobilen Endgeräten funktioniert, leider jedoch die Verbreitung von Konfigurationen versagt. Da jedoch 99 Prozent aller modernen Unternehmen über solche Möglichkeiten verfügen sollten, dürfte dies im realen Betrieb weniger problematisch ausfallen. Hervorzuheben ist hierbei die hervorragende Dokumentation, die MobileIron für den Installationsprozess zur Verfügung stellt. Auf deren Website findet sich eine Sammlung an Dokumenten, welche den Administrator am Anfang zwar überwältigen könnten, aber sich als eine schnell zu durchforstende Sammlung an bebilderten Skripten zur Einrichtung sämtlicher Funktionen herausstellen. Generell lässt sich die Webplattform, welche MobileIron hier zur Verfügung stellt, gut bedienen und bietet Informationen zu den verschiedenen Implementierungsszenarien und Komponenten des Systems. So findet man sich nach kurzer Zeit bereits relativ gut zurecht und weiß wo man suchen muss, um die benötigte Information zu finden.
@@ -89,7 +89,7 @@ In diesem Teil werden die wichtigsten von MobileIron gebotenen Features beleucht
 	\end{itemize}
 	\item Konfiguration der eingebundenen Endgeräte
 	\begin{itemize}
-		\item Vorkonfiguration von Email-Konten und sonstigem (Wifi, VPN, etc.)
+		\item Vorkonfiguration von Email-Konten und sonstigem (WLAN\footnote{Wireless Local Area Network}, VPN\footnote{Virtual Private Network}, etc.)
 		\begin{itemize}
 			\item Der Angestellte muss dies nicht selbst erledigen
 			\item Keine Chance einer Fehlkonfiguration
@@ -105,7 +105,7 @@ In diesem Teil werden die wichtigsten von MobileIron gebotenen Features beleucht
 			\item Betriebssystem
 			\item Betriebssystemversion
 			\item Zugehörigkeit (gehört dem Unternehmen oder dem Angestellten)
-			\item Netzbetreiber (3, A1, Telering, etc...)
+			\item Netzbetreiber (3, A1, Telering, etc.)
 			\item Registrierungszustand 
 		\end{itemize}
 		\item Logging von Events
@@ -132,7 +132,7 @@ Retire                  & Unset setting  &                   & Assign Space Admi
 		\item Dienen zur Erhöhung der Sicherheit von registrierten Mobilgeräten
 		\item Blockieren von Systemteilen oder Einstellungen
 		\begin{itemize}
-			\item Zum Beispiel: Der Benutzer kann das WLAN oder GPS nicht mehr ausschalten.
+			\item Zum Beispiel: Der Benutzer kann das WLAN\footnote{Wireless Local Area Network} oder GPS\footnote{Global Positioning System} nicht mehr ausschalten.
 			\item Diese Funktion wird benötigt, wenn die Chance besteht, dass der Anwender durch gewollte oder ungewollte Aktionen das Gerät in einen unbenutzbaren Zustand bringt.
 		\end{itemize}
 		\item Passwortpflicht
@@ -168,7 +168,7 @@ Nachdem sich das Projektteam in diese vertieft hatte, hat es erkannt, dass diese
 
 \newpage
 %----------------------------MDM + Container--------------------------------
-\section{MDM + Container}
+\section{Mobile Device Management + Container}
 \subsection{MobileIron Containertechnologie}
 MobileIron Content Mangement (MCM) ist die Containertechnologie der gleichnamigen Firma MobileIron. Die Containertechnologie basiert auf dem MobileIron MDM System, welches in diesem Projekt separat analysiert wird. \newline
 Der Hauptnutzen dieser bestimmten Containertechnolgie ist die Verwaltung von Benutzerressourcen. Ursprungsansatz der Entwicklung ist der fortschreitende Trend zur Arbeit auf mobilen Geräten wie Tablets. Das MCM System ist auf folgende Module aufgeteilt: Docs@Work, Apps@Work, Web@Work.
@@ -218,7 +218,7 @@ Laut der Dokumentation von MobileIron ist es möglich die User-/Geräte-Verwaltu
 \paragraph*{}
 Die Gegenmaßnahme von MobileIron zur Prävention von DLP (Data Loss Prevention) ist die Deaktivierung vom Erstellen von Screenshots des Users.
 \paragraph*{}
-Beim Einsatz dieser Technologie steht der Vorteil bezüglich des VPN im Vordergrund. Um Mitarbeitern einen sicheren, abgeschirmten Zugriff auf Webressourcen zu gewähren war bisher eine mögliche Variante, eine VPN Verbindung einzurichten. Web@Work ersetzt das VPN und gewährt weitere Möglichkeiten wie bereits oben beschrieben.
+Beim Einsatz dieser Technologie steht der Vorteil bezüglich des VPN im Vordergrund. Um Mitarbeitern einen sicheren, abgeschirmten Zugriff auf Webressourcen zu gewähren war bisher eine mögliche Variante, eine VPN Verbindung einzurichten. Web@Work ersetzt das VPN\footnote{Virtual Private Network} und gewährt weitere Möglichkeiten wie bereits oben beschrieben.
 
 \subsubsection{Apps@Work}
 Diese Technologie stellt dem Benutzer des Devices die benötigten Apps zur Verfügung. Dabei kann der User selbst nicht entscheiden, welche Apps er installiert, sondern der IT Administrator. Somit wird das Verwenden des Devices für nicht unternehmensinterne Angelegenheiten verhinder. Der IT Administrator deklariert alle Apps, die laut Unternehmensführung genehmigt sind. Alle anderen Apps welche nicht angeführt sind, sind somit nicht für die Installation zulässig. Diese Technologie basiert auf AppConnect und AppTunnel.
@@ -301,7 +301,7 @@ Container sind quasi ein Android im Android und bezeichnet einen gesicherten, se
 Mittels Richtlinienkonfiguration kann der IT-Verwalter des Gerätes einen read-only (nur lesen) Zugriff für bestimmte Anwendungen im Container auf Daten außerhalb des Containers einrichten. Umgekehrt besteht diese Möglichkeit allerdings nicht. Daten innerhalb des Containers werden dabei mit einem Verschlüsselungsalgorithmus und einem AES-256 Bit Schlüssel geschützt. Ein Zugriff ist erst nach Eingabe eines Passwortes möglich.
 \paragraph{On-Device Data Encryption (ODE)}
 ODE ist ein im Knox enthaltenes Feature zur Verschlüsselung von Daten. Dabei kann sowohl der sichere Container als auch der normale Bereich, sowie interner als auch externer Speicher verschlüsselt werden. Verwendet wird ein AES Algorithmus mit einem 256 Bit starken Schlüssel. Die Verschlüsselungsfunktion kann vom User selbst unter den Einstellungen oder vom IT Administrator durch eine Richtlinie aktiviert werden.
-\paragraph{Virtual Private Network Support (VPN)}
+\paragraph{Virtual Private Network (VPN) Support }
 VPN-Verbindungen verwendet man um sicherzustellen, dass Daten bei der Übertragung geschützt sind und um den Netzwerkverkehr nicht mit den Daten von persönlichen Apps zu belasten.
 \begin{itemize}
 	\item \textbf{Funktionsweise} \newline 
@@ -331,12 +331,12 @@ Samsung Knox gibt es in 2 Varianten, wobei beide Varianten ein MDM als Basis ben
 			\item Support für zwei separate Container für maximale Produktivität und für Trennung von arbeitsbezogenen und privaten Daten
 		\end{itemize}
 	All diese Einstellungen, die mit Knox Workspace dazu kommen, gelten nur innerhalb des Containers. Da es jedoch keine Einstellung gibt um zu verhindern, dass der Benutzer den Container verlässt und somit alle Workspace-Einstellungen umgeht, ist dieses Add-on in unserem Fall ungeeignet. \par Jedoch soll in Zukunft eine Art Contaier-only-mode implementiert werden. Sobald dieser vorhanden ist, wäre Knox Worspace auf jeden Fall ein Addon das in Betracht gezogen werden sollte.
-		\item \textbf{Knox IAM} \newline
+		\item \textbf{Knox IAM\footnote{Identity and Access Management}} \newline
 		Knox IAM ist eine SSO-Lösung(Single Sign-On-Lösung). \par Das heißt mit dem IAM Add-on hat man nur mehr einen einzigen Account, mit den man sich in allen Apps anmelden kann.
 	\end{itemize}
 \end{itemize}
 \paragraph{MDMs}
-Knox bietet zur Verwaltung der Geräte ein eigenes MDM, das EMM, hat aber auch genügend Partner, deren MDMs Samsung Knox Funktionen implementiert haben. \par
+Knox bietet zur Verwaltung der Geräte ein eigenes MDM, das EMM\footnote{Enterprise Marketing Management}, hat aber auch genügend Partner, deren MDMs Samsung Knox Funktionen implementiert haben. \par
 Samsung Knox funktioniert also mit jedem MDM aus der nachfolgenden Liste:
 \begin{itemize}
 	\item \textbf{Liste an Kompatiblen MDMs}

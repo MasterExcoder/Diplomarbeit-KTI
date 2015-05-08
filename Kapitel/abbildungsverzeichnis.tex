@@ -1,0 +1,5 @@
+\let\LaTeXStandardClearpage\clearpage
+\let\clearpage\relax  % Do nothing when a \clearpage command appears
+\chapter{Abbildungsverzeichnis}
+\listoffigures
+\let\clearpage\LaTeXStandardClearpage % Return to the old definition

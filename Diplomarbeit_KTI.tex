@@ -35,6 +35,7 @@
 \setcounter{tocdepth}{5}
 \setcounter{secnumdepth}{5}
 \tableofcontents
+\include{leerseite}
 
 \mainmatter
 \setcounter{page}{1}
@@ -47,12 +48,13 @@
 \include{Kapitel/danksagung}
 
 
+\include{leerseite}
 \chapter{Quellenverzeichnis}
 \printbibliography[heading=bibintoc]
-\chapter{Abbildungsverzeichnis}
-\listoffigures
-\chapter{Tabellenverzeichnis}
-\listoftables
+\include{leerseite}
+\include{Kapitel/abbildungsverzeichnis}
+\include{leerseite}
+\include{Kapitel/tabellenverzeichnis}
 
 
 \include{Kapitel/begleitprotokoll}

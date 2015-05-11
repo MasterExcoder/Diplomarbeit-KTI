@@ -1,11 +1,11 @@
 \chapter{Einleitung}
 \section{Motivation}
-Im zunehmenden Maße finden sich mobile Endgeräte (z.B. Tablet) als Marketing, Informations- und Imageelement, aber auch als Teil von Prozessen im Retail- als auch im Industrieumfeld wieder. Diese ersetzen oder erweitern bestehende Lösungen (z.b. Kiosk, Digital-Signage, Laptops, Industrie PCs) um interaktive Elemente und unterstützen so Unternehmen in ihren Geschäftsprozessen. 
-Bei der eingesetzten Lösung ist es aus Sicht des Retail und Industrie-Kunden wichtig die Handhabung und das Erlebnis des Gerätes für den Anwender zu erhalten. Die Einsatzgebiete reichen dabei von Tablets in Produktionsprozessen zu Zwecken der Qualitätssicherung (eigene Applikationen mit Dokumentationsfunktionen) bis hin zu Multimedia-Terminals im stationären Handel. Um diese verschiedenen Szenarien realisieren zu können ist es notwendig eine stabile, sichere und wartbare Plattform zu konstruieren, die zum einen die Anwendung in unterschiedlichen Einsatzgebieten ermöglicht und zum anderen für den Betriebsführer leicht bereitzustellen und zu warten ist.
+Im zunehmenden Maße finden sich mobile Endgeräte (z.B. Tablet) als Marketing-,\newline Informations- und Imageelement, aber auch als Teil von Prozessen im Retail- als auch im Industrieumfeld wieder. Diese ersetzen oder erweitern bestehende Lösungen (z.B. Kiosk, Digital-Signage, Laptops, Industrie PCs) um interaktive Elemente und unterstützen so Unternehmen in ihren Geschäftsprozessen. 
+Bei der eingesetzten Lösung ist es aus Sicht des Retail und Industriekunden wichtig, die Handhabung und das Erlebnis des Gerätes für den Anwender zu erhalten. Die Einsatzgebiete reichen dabei von Tablets in Produktionsprozessen zu Zwecken der Qualitätssicherung (eigene Applikationen mit Dokumentationsfunktionen) bis hin zu Multimedia-Terminals im stationären Handel. Um diese verschiedenen Szenarien realisieren zu können, ist es notwendig eine stabile, sichere und wartbare Plattform zu konstruieren, die zum einen die Anwendung in unterschiedlichen Einsatzgebieten ermöglicht und zum anderen für den Betriebsführer leicht bereitzustellen und zu warten ist.
 \paragraph*{}
-Um den hier angeführten allgemeinen Anforderungen ihrer Kunden gerecht zu werden, benötigt Kapsch die passendste Softwarelösung im Bereich Security für die hierfür in Betracht gezogenen Tablets. Um diese Softwarelösung zu ermitteln, wurde ein Projektteam des fünften Jahrgangs der HTBLVA Spengergasse, Fachbereich Informatik mit der Aufgabe der Eruierung dieser Lösung und  der Erstellung eines Konzepts betraut. Das Projekt KTI – Kapsch Tablet Infrastructure wird von dem Projektmanager Philip Steinhäuser geleitet  und besteht aus den Teammitgliedern Sebastian Götze, Samuel Hammer, Kaufmann Michael und Konstanze Müller. Das Projektteam steht in engem Kontakt mit dem Project-owner welcher mit den Mitarbeitern Bernhard Bruckner und Jürgen Krammer vertreten ist. 
+Um den hier angeführten allgemeinen Anforderungen ihrer Kunden gerecht zu werden, benötigt Kapsch die passendste Softwarelösung im Bereich Security für die hierfür in Betracht gezogenen Tablets. Um diese Softwarelösung zu ermitteln, wurde ein Projektteam des fünften Jahrgangs der HTBLVA Spengergasse, Fachbereich Informatik, mit der Aufgabe der Eroierung dieser Lösung und  der Erstellung eines Konzepts betraut. Das Projekt KTI – Kapsch Tablet Infrastructure wird von dem Projektmanager Philip Steinhäuser geleitet  und besteht aus den Teammitgliedern Sebastian Götze, Samuel Hammer,\newline Michael Kaufmann und Konstanze Müller. Das Projektteam steht in engem Kontakt mit dem Project owner, welcher durch die Mitarbeiter Bernhard Bruckner und Jürgen Krammer vertreten ist. 
 \paragraph*{}
-Kapsch unterstützt das Projekt mit diversen Hilfeleistungen sowie Technischer Support, Intellektuelle Hilfe und finanzielle Unterstützung beim Kauf des Tablets, welches nach Beendigung des Projekts wieder in den Besitz von Kapsch übergehen wird.
+Kapsch unterstützt das Projekt mit diversen Hilfeleistungen sowie Technischer Supports, intellektueller Hilfe und finanzieller Unterstützung beim Kauf des Tablets, welches nach Beendigung des Projekts wieder in den Besitz von Kapsch übergehen wird.
 
 \newpage
 
@@ -26,25 +26,25 @@ Die Kapsch TrafficCom ist internationaler Anbieter von Technologien, Lösungen u
 \paragraph*{}
 Die Kapsch CarrierCom ist globaler Lösungspartner für Telco-Carrier und Communication-Provider sowie Railway-Operator. 
 \paragraph*{} 
-Unser konkreter Projektpartner ist jedoch die Kapsch BusinessCom.
-Mit 1.400 Mitarbeitern, einem Umsatz von knapp 300 Millionen Euro und Niederlassungen in Österreich, Tschechien, Slowakei, Ungarn, Rumänien und Polen, positioniert sich das Unternehmen als einer der führenden ICT-Servicepartner in Zentral- und Osteuropa. Kapsch setzt auf Partnerschaften mit führenden Branchengrößen wie Apple, Cisco, Google, HP oder Microsoft, um seinen rund 17.000 Kunden den bestmöglichen Service gewährleisten zu können.
+Unser konkreter Projektpartner ist die Kapsch BusinessCom.
+Mit 1.400 Mitarbeitern, einem Umsatz von knapp 300 Millionen Euro und Niederlassungen in Österreich, Tschechien, Slowakei, Ungarn, Rumänien und Polen positioniert sich das Unternehmen als einer der führenden ICT-Servicepartner in Zentral- und Osteuropa. Kapsch setzt auf Partnerschaften mit führenden Branchengrößen wie Apple, Cisco, Google, HP oder Microsoft, um seinen rund 17.000 Kunden den bestmöglichen Service gewährleisten zu können.
 
 \newpage
 
 \section{Ursprungsproblem}
-Die Aufgabe von Kapsch an das Projektteam ist es, verschiedene Softwarelösungen zum Systemschutz von Android-Tablets zu testen. Die vom Projektowner zum Test gewünschten Softwarelösungen sind.
+Die Aufgabe von Kapsch an das Projektteam ist es, verschiedene Softwarelösungen zum Systemschutz von Android-Tablets zu testen. Die vom Project owner zum Test gewünschten Softwarelösungen sind.
 \begin{itemize}
 	\item MDM
 	\item MDM + Container
 	\item Samsung Knox
 \end{itemize}
-Zusätzlich bestünde noch die Möglichkeit einer \textbf {Linux Manipulation}, welche jedoch für Kapsch aus rechtlichen Gründen nicht in Frage kommt, da diverse Garantieverletzungen auftreten würden und zusätzlich enorme Kosten anfallen würden aufgrund von Hohen Entwicklungskosten und langen Entwicklungszeiten bis das System einwandfrei funktionieren würde.
+Zusätzlich besteht noch die Möglichkeit einer \textbf {Linux Manipulation}, welche jedoch für Kapsch aus rechtlichen Gründen nicht in Frage kommt, da diverse Garantieverletzungen auftreten und zusätzlich enorme Kosten aufgrund von hohen Entwicklungskosten und langen Entwicklungszeiten, bis das System einwandfrei funktioniert, anfallen würden.
 \paragraph*{}
 Zu diesen Schutzsystemmöglichkeiten soll ein Untersuchungsbericht angefertigt werden. In diesem werden die Ergebnisse  festgehalten und verglichen, um das beste System für die Kunden von Kapsch zu ermitteln.
 \paragraph*{}
-Auf Basis dieses Untersuchungsberichts soll dann die Passendste Softwarelösung ausgewählt werden, welche in ein Konzept eingebaut wird. Ein Teil dieses Konzepts beinhaltet die Implementierung der ausgewählten Softwarelösung auf ein Tablet welches dann als Prototyp deklariert wird. 
+Auf Basis dieses Untersuchungsberichts soll dann die passendste Softwarelösung ausgewählt werden, welche in ein Konzept eingebaut wird. Ein Teil dieses Konzepts beinhaltet die Implementierung der ausgewählten Softwarelösung auf ein Tablet, welches dann als Prototyp deklariert wird. 
 \paragraph*{}
-Der Untersuchungsbericht in Kombination mit dem Prototyp ist das Ergebnis was über den Ausgang dieses Projekts entscheidet.
+Der Untersuchungsbericht in Kombination mit dem Prototyp ist das Ergebnis, welches über den Ausgang dieses Projekts entscheidet.
 
 
 \section{Vorgehensweise}
@@ -90,21 +90,21 @@ Der Untersuchungsbericht in Kombination mit dem Prototyp ist das Ergebnis was ü
 	\includegraphics[scale=0.6]{Images/organigramm}
 	\caption{Projekt-Organigramm}
 \end{figure}
-Die Aufgaben des Projekts wurden ab diesem Zeitpunkt so verteilt das das Dokumentationsteam sämtliche Projektmanagementaufgaben und das Technik Team alle Research- und Testungsaufgaben übernimmt.
+Die Aufgaben des Projekts wurden so verteilt, dass das Dokumentationsteam sämtliche Projektmanagementaufgaben und das Technikteam alle Research- und Testungsaufgaben übernimmt.
 \begin{figure}[H]
 	\includegraphics[scale=0.7]{Images/arbeitsteilung}
 	\caption{Aufgabenverteilung - Diagramm}
 \end{figure}
 Dieses Ablaufdiagramm zeigt auf der einen Seite die Reihenfolge der erstellten Dokumente, so wie beispielsweise, dass der OSP und der Timetable/Gantt Chart auf dem PSP aufbaut, da dieser zuvor erstellt wurde und diese drei Dokumente konsistent sein müssen.
 \paragraph*{}
-Auf der Technik Seite wiederum sieht man das zuerst eine umfangreiche Recherche nötig ist bzw. war, bevor die Wahl der passendsten Softwarelösung getroffen werden kann / konnte, welche dann schlussendlich für das Konzept und in weiterer Folge für die Konfiguration des Prototyps verwendet werden konnte/wurde.
+Auf der Technik Seite wiederum sieht man, dass zuerst eine umfangreiche Recherche nötig ist bzw. war, bevor die Wahl der passendsten Softwarelösung getroffen werden kann/konnte, welche dann schlussendlich für das Konzept und in weiterer Folge für die Konfiguration des Prototyps verwendet werden konnte/wurde.
+
 
 \newpage
 Wenn man sich unsere Vorgehensweise nun Schritt für Schritt auf die beiden Sub Teams aufgeteilt anschauen würde, würde folgendes Bild entstehen:
 
 \begin{table}
-	\centering
-	\begin{tabular}{| c | p{6cm} | p{7cm} |}
+	\begin{tabular}{| c | p{6.5cm} | p{7.5cm} |}
 		\hline
 		\textbf \# & \textbf{Dokumentation} & \textbf{Technik}
 		\\\hline %----------new line----------
@@ -186,10 +186,10 @@ Wenn man sich unsere Vorgehensweise nun Schritt für Schritt auf die beiden Sub 
 \newpage
 
 \section{Arbeitsaufteilung}
-In unserem Projekt wurde die Arbeit so aufgeteilt, dass kein Teammitglied zu viel oder zu wenig sondern genau richtig ausgelastet ist, um die Freude und Motivation an der Arbeit über die Dauer der Projektarbeit immer konstant hoch zu halten. Hier zu sehen ist, was welches Projektmitglied an welchem Dokument gearbeitet hat oder welche Softwarelösung von ihm recherchiert und textuell beschrieben wurde.
+In unserem Projekt wurde die Arbeit so aufgeteilt, dass kein Teammitglied zu viel oder zu wenig, sondern genau richtig ausgelastet ist, um die Freude und Motivation an der Arbeit über die Dauer der Projektarbeit immer konstant hoch zu halten. Hier zu sehen ist, was welches Projektmitglied an welchem Dokument gearbeitet hat oder welche Softwarelösung von ihm recherchiert und textuell beschrieben wurde.
 
 \subsection{Sebastian Götze}
-Sebastian war Verantwortlicher für die Recherche an den Softwarelösungen Mobile Device Management sowie Linux Manipulation, welches jedoch lediglich aus Informationszwecken und nicht aufgrund seiner Verwendung recherchiert wurde. Weiters arbeitete er an Dokumenten wie dem Projektantrag, der Vorstudie, dem Pflichtenheft sowie dem Projekthandbuch mit. Von ihm stammen außerdem das Checklist Template sowie das Research Template, welche für die Recherche sowie das Testing der einzelnen Softwarelösungen verwendet wurden.
+Sebastian war Verantwortlicher für die Recherche an den Softwarelösungen Mobile Device Management sowie Linux Manipulation, welches jedoch lediglich aus Informationszwecken, und nicht aufgrund seiner Verwendung recherchiert wurde. Weiters arbeitete er an Dokumenten wie dem Projektantrag, der Vorstudie, dem Pflichtenheft sowie dem Projekthandbuch mit. Von ihm stammen außerdem das Checklist Template sowie das Research Template, welche für die Recherche sowie das Testing der einzelnen Softwarelösungen verwendet wurden.
 %	\begin{itemize}
 %		\item Projektantrag
 %		\item Vorstudie
@@ -230,7 +230,7 @@ Sebastian war Verantwortlicher für die Recherche an den Softwarelösungen Mobil
 
 
 \subsection{Samuel Hammer}
-Samuel war Verantwortlicher für das erstellen sämtlicher Präsentationen sowie für die Schriftführung bei unseren Projectownermeetings, welche im Anschluss an diese von ihm in Form von Besprechungsprotokollen dokumentiert und festgehalten wurden. Weiters arbeitet er an dem Projektantrag, der Vorstudie, dem Projekthandbuch, dem Pflichtenheft sowie der Diplomarbeit mit. Von ihm stammt außerdem die erste Version unserer Zeitplanung in Form eines Gantt Charts, welche bzw. welches als Grundlage für die darauffolgenden Versionen und als Unterstützung der Planung von etwaigen Terminen von Abgaben, sowie zur Projektfortschrittskontrolle verwendet wurde.
+Samuel war Verantwortlicher für das Erstellen sämtlicher Präsentationen sowie für die Schriftführung bei unseren Projectownermeetings, welche im Anschluss an diese von ihm in Form von Besprechungsprotokollen dokumentiert und festgehalten wurden. Weiters arbeitete er am Projektantrag, der Vorstudie, dem Projekthandbuch, dem Pflichtenheft sowie der Diplomarbeit mit. Von ihm stammt außerdem die erste Version unserer Zeitplanung in Form eines Gantt Charts, welche bzw. welches als Grundlage für die folgenden Versionen und als Unterstützung der Planung von etwaigen Terminen von Abgaben, sowie zur Projektfortschrittskontrolle verwendet wurde.
 %	\begin{itemize}
 %		\item Projektantrag
 %		\item Vorstudie
@@ -271,7 +271,7 @@ Samuel war Verantwortlicher für das erstellen sämtlicher Präsentationen sowie
 %	\end{itemize}
 
 \subsection{Michael Kaufmann}
-Michael war der Verantwortliche für die Recherche an der Softwarelösung Samsung Knox, sowie deren Implementierung nach Beendigung der Research- und Testingphase. Weiters arbeitet er am Projektantrag, der Vorstudie, dem Projekthandbuch sowie dem Pflichtenheft mit. Zudem sind von ihm eine Gantt Chart Versionen, welche eine große Rolle in der Planung und dem reibungslosen Ablauf unseres Projekts spielten, erstellt worden.
+Michael war Verantwortlicher für die Recherche an der Softwarelösung Samsung Knox, sowie deren Implementierung nach Beendigung der Research- und Testingphase. Weiters arbeitete er am Projektantrag, der Vorstudie, dem Projekthandbuch sowie dem Pflichtenheft mit. Zudem sind von ihm Gantt-Chart Versionen, welche eine große Rolle in der Planung und dem reibungslosen Ablauf unseres Projekts spielten, erstellt worden.
 %	\begin{itemize}
 %		\item Projektantrag
 %		\item Vorstudie
@@ -304,10 +304,8 @@ Michael war der Verantwortliche für die Recherche an der Softwarelösung Samsun
 %		\item Prototyp
 %	\end{itemize}
 
-\newpage
-
 \subsection{Konstanze Müller}
-Konstanze war Verantwortliche für die Recherche der Softwarelösung Mobile Device Management mit Container, bei welcher sie einige für den später erstellten Untersuchungsbericht relevante Daten sammeln und textuell in dem jeweiligen Checklist und Research Template festhalten konnte. Weiters arbeitet sie an dem Projektantrag, der Vorstudie, dem Projekthandbuch sowie dem Pflichtenheft mit. Gemeinsam mit Philip erstellte sie alle zwei Wochen einen Statusbericht der vergangen Periode.
+Konstanze war Verantwortliche für die Recherche der Softwarelösung Mobile Device Management mit Container, bei welcher sie einige für den später erstellten Untersuchungsbericht relevante Daten sammeln und textuell in den jeweiligen Checklist und Research Templates festhalten konnte. Weiters arbeitete sie an dem Projektantrag, der Vorstudie, dem Projekthandbuch sowie dem Pflichtenheft mit. Gemeinsam mit Philip erstellte sie alle zwei Wochen einen Statusbericht.
 %	\begin{itemize}
 %		\item Projektantrag
 %		\item Vorstudie
@@ -340,8 +338,10 @@ Konstanze war Verantwortliche für die Recherche der Softwarelösung Mobile Devi
 %		\item Prototyp
 %	\end{itemize}
 
+\newpage
+
 \subsection{Philip Steinhäuser (Projektleiter)}
-Philip war neben seiner Tätigkeit als Projekt Leiter auch Verantwortlicher für das Projekthandbuch, die Meilensteintrendanalyse, die Statusberichte, das Abnahmeprotokoll sowie für das Project Controlling und Zeitmanagement des Projekts.  Er arbeitet am Projektantrag, der Vorstudie, dem Objektstrukturplan (OSP), dem Projektstrukturplan (PSP), dem Pflichtenheft, dem Projekthandbuch sowie der Diplomarbeit mit. Von ihm wurde weiters die eben schon erwähnte Meilensteintrendanalyse sowie das Abnahmeprotokoll verfasst. Weiters zählte die regelmäßige Aktualisierung des Projekthandbuchs sowie die Vertretung des Projektteams gegenüber dem Projektpartner als auch den Lehrern zu seinen Aufgaben. 
+Philip war neben seiner Tätigkeit als Projektleiter auch Verantwortlicher für das Projekthandbuch, die Meilensteintrendanalyse, die Statusberichte, das Abnahmeprotokoll sowie für das Project Controlling und Zeitmanagement des Projekts.  Er arbeitete am Projektantrag, der Vorstudie, dem Objektstrukturplan (OSP), dem Projektstrukturplan (PSP), dem Pflichtenheft, dem Projekthandbuch sowie der Diplomarbeit mit. Von ihm wurde weiters die eben schon erwähnte Meilensteintrendanalyse sowie das Abnahmeprotokoll verfasst. Weiters zählte die regelmäßige Aktualisierung des Projekthandbuchs sowie die Vertretung des Projektteams gegenüber dem Projektpartner und den Lehrern zu seinen Aufgaben. 
 %\begin{itemize}
 %	\item Projektantrag
 %	\item Vorstudie

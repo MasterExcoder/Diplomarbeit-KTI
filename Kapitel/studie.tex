@@ -1,7 +1,7 @@
 \chapter{Studie}
 \section{Android}
-Android ist, im Gegensatz zu anderen mobilen Betriebssystemen auf dem Markt, eine offene Plattform. Das kommt im Wesentlichen daher, dass Android auf einem open source System, dem Linux Kernel, aufbaut. Durch die freie Verfügbarkeit des Codes, gibt es im Android-Bereich eine große Developer Szene die laufend eigens modifizierte Betriebssysteme (ROMs) und Apps hervorbringt.
-Ein so hoher Grad an Offenheit birgt jedoch auch gewisse Sicherheitsrisiken und öffnet Angriffsvektoren. Um diese Gefahren besser zu verstehen sollte man sich eingehend mit der Android Architektur und dem darin enthaltenen Sicherheitskonzept befassen.
+Android ist, im Gegensatz zu anderen mobilen Betriebssystemen auf dem Markt, eine offene Plattform. Das kommt im Wesentlichen daher, dass Android auf einem open source System, dem Linux Kernel, aufbaut. Durch die freie Verfügbarkeit des Codes gibt es im Android-Bereich eine große Developer-Szene, die laufend eigens modifizierte Betriebssysteme (ROMs) und Apps hervorbringt.
+Ein so hoher Grad an Offenheit birgt jedoch auch gewisse Sicherheitsrisiken und öffnet Angriffsvektoren. Um diese Gefahren besser zu verstehen, sollte man sich eingehend mit der Android Architektur und dem darin enthaltenen Sicherheitskonzept befassen.
 
 \subsection{Architektur}
 \begin{figure}[H]
@@ -9,22 +9,22 @@ Ein so hoher Grad an Offenheit birgt jedoch auch gewisse Sicherheitsrisiken und 
 \includegraphics[scale=0.7]{Images/android_stack}
 \caption{Android Systemarchitektur}
 \end{figure}
-Wie in Abbildung 1 zu sehen ist, bildet der Linux Kernel die unterste Schicht der Architektur. Auf ihm baut das gesamte Betriebssystem mitsamt aller Sicherheitskonzepte auf. Der Kernel stellt die Brücke zwischen Hard- und Software dar und enthält die Treiber für diverse andere Komponenten eines Smartphones wie beispielsweise Modem, GPS Empfänger, Kamera, etc… 
+Wie in Abbildung 1 zu sehen ist, bildet der Linux Kernel die unterste Schicht der Architektur. Auf ihm baut das gesamte Betriebssystem mitsamt aller Sicherheitskonzepte auf. Der Kernel stellt die Brücke zwischen Hard- und Software dar und enthält die Treiber für diverse andere Komponenten eines Smartphones, wie beispielsweise Modem, GPS Empfänger, Kamera, etc. 
 \paragraph*{}
-In der darüber liegende Ebene sind die Android Libaries sowie die Runtime, also die „Dalvik Virtual Machine“ zu finden. \newline
-Android Apps sind meist in Java Programmiert und werden jeweils in einer eigenen Virtuellen Maschine ausgeführt, der DVM\footnote{Dalvik Virtual Machine}. Diese Systematik ermöglicht das logische, parallele, unabhängige Ausführen von verschiedenen Apps mit verschiedenen Benutzerrechten.
+In der darüber liegenden Ebene sind die Android Libaries sowie die Runtime, also die „Dalvik Virtual Machine“, zu finden. \newline
+Android Apps sind meist in Java programmiert und werden jeweils in einer eigenen virtuellen Maschine ausgeführt, der DVM\footnote{Dalvik Virtual Machine}. Diese Systematik ermöglicht das logische, parallele, unabhängige Ausführen von verschiedenen Apps mit verschiedenen Benutzerrechten.
 Die Libaries steuern und kontrollieren im Wesentlichen die Funktionen des Kernels und sind für die zentralen Funktionalitäten auf niedriger Ebene zuständig.
 \paragraph*{}
-Die nächst-höhere Ebene bildet das Application Framework. Hier befinden die Grundfunktionen von Android wie zum Beispiel Telefonie, Location Services, Window Manager, Notification Manager, etc… 
+Die nächsthöhere Ebene bildet das Application Framework. Hier befinden sich die Grundfunktionen von Android, wie zum Beispiel Telefonie, Location Services, Window Manager, Notification Manager, etc… 
 Auf dieser Ebene werden Entwicklern äußerst umfangreiche APIs für das Entwickeln von Benutzeranwendungen (Apps) zur Verfügung gestellt.
 \paragraph*{}
-Die oberste Schicht in der Android-Systemarchitektur sind die Applikationen welche der Benutzer selbst installiert und auf den darunterliegenden Schichten aufbaut.
+Die oberste Schicht in der Android-Systemarchitektur sind die Applikationen, welche der Benutzer selbst installiert und auf den darunterliegenden Schichten aufbaut.
 \paragraph*{}
 Dieser gesamte „Stack“ (=Stapel) wird in einem ROM zusammengefasst und auf ein Smartphone installiert. Durch die zuvor erwähnte Offenheit des Systems können so durch Modifizieren eines ROM Paketes stark angepasste Versionen von Android entwickelt und verwendet werden.
 
 
 \subsection{Security}
-Android wird als Betriebssystem mittlerweile auf ca 84\% aller Smartphones weltweit eingesetzt.\footnote{Link: http://www.idc.com/prodserv/									smartphone-os-market-share.jsp, Stand Q3 2014} Ein Betriebssystem mit einem so großen Marktanteil erfordert ein durchdachtes und ausgereiftes Sicherheitskonzept.
+Android wird als Betriebssystem mittlerweile auf ca, 84 \% aller Smartphones weltweit eingesetzt.\footnote{Link: http://www.idc.com/prodserv/									smartphone-os-market-share.jsp, Stand 10.11.2014} Ein Betriebssystem mit einem so großen Marktanteil erfordert ein durchdachtes und ausgereiftes Sicherheitskonzept.
 Die drei grundlegenden Sicherheitsobjekte sind:
 
 \begin{itemize}
@@ -32,7 +32,7 @@ Die drei grundlegenden Sicherheitsobjekte sind:
 	\item Schützen von Systemressourcen (inklusive Netzwerk)
 	\item Bereitstellen von Applikationsisolation
 \end{itemize}
-Um diese Objekte zu erreichen, stehen eine Reihe von Security-Features zur Verfügung
+Um diese Objekte zu erreichen, stehen eine Reihe von Security-Features zur Verfügung:
 \begin{itemize}
 	\item Robuste Security auf der OS Ebene durch den Linux Kernel
 	\item Erforderliche Sandbox für alle Apps
@@ -42,32 +42,32 @@ Um diese Objekte zu erreichen, stehen eine Reihe von Security-Features zur Verf�
 \end{itemize}
 
 \subsubsection{System- und Kernel Security}
-Der Linux Kernel stellt das Fundament von Android dar. Durch dessen langjährige Wartung und Weiterentwicklung hat dieser sich zu einem äußerst sicheren und weit verbreiteten Kernel entwickelt, welcher auch in Sicherheitsempfindlichen Umgebungen eingesetzt wird.
+Der Linux Kernel stellt das Fundament von Android dar. Durch dessen langjährige Wartung und Weiterentwicklung hat dieser sich zu einem äußerst sicheren und weit verbreiteten Kernel entwickelt, welcher auch in sicherheitsempfindlichen Umgebungen eingesetzt wird.
 \paragraph*{}
 Der Linux Kernel stellt einige der wichtigsten Sicherheitsfunktionen zur Verfügung.
 \begin{itemize}
-	\item Ein Benutzer-basiertes Rechtemodell
+	\item Ein benutzerbasiertes Rechtemodell
 	\item Prozessisolation
 	\item Mechanismus für sichere IPC\footnote{Interprozesskommunikation} 
-	\item Die Möglichkeit potentiel gefährliche Teile des Kernels zu entfernen
+	\item Die Möglichkeit potenziell gefährliche Teile des Kernels zu entfernen
 \end{itemize}
-Im Gegensatz zum normalen Linux, wo mehrere Anwendungen mit demselben Benutzer ausgeführt werden, weist Android jeder Applikation eine eigene User ID zu und führt diese mit ebendiesem User in einem separaten Prozess aus.
-Diese Vorgehensweise resultiert in einer „Kernel-level Application Sandbox“. Dadurch kann eine App von Haus aus mit keiner anderen App kommunizieren sofern dies nicht explizit erwünscht ist. Standardmäßig können Apps auch nicht auf Dinge wie Standort, die Telefonie-Funktion, etc. zugreifen sondern müssen erst um die Erteilung der entsprechenden Benutzerrechte ansuchen. Die Tatsache dass diese Sandbox-Systematik auf Jahrzehnte alter UNIX Technologie aufbaut, macht das System leicht überwachbar und transparent, jedoch gleichzeitig effizient.
+Im Gegensatz zum normalen Linux, wo mehrere Anwendungen mit demselben Benutzer ausgeführt werden, weist Android jeder Applikation eine eigene User ID zu und führt diese mit eben diesem User in einem separaten Prozess aus.
+Diese Vorgehensweise resultiert in einer „Kernel-level Application Sandbox“. Dadurch kann eine App von Haus aus mit keiner anderen App kommunizieren, sofern dies nicht explizit erwünscht ist. Standardmäßig können Apps auch nicht auf Dinge wie Standort, die Telefonie-Funktion etc. zugreifen, sondern müssen erst um die Erteilung der entsprechenden Benutzerrechte ansuchen. Die Tatsache, dass diese Sandbox-Systematik auf Jahrzehnte alter UNIX Technologie aufbaut, macht das System leicht überwachbar und transparent, jedoch gleichzeitig effizient.
 \paragraph*{}
-Speicherfehler führen in vielen Betriebssystemen zu groben Sicherheitsrisiken und sind in der Lage die Sicherheit eines Gerätes komplett zu kompromittieren. Bei Android kann ein solcher Speicherfehler durch das Sandboxing aller Applikationen auf OS-Level keinen allzu großen Schaden anrichten, da eventueller Schadcode nur im Kontext einer bestimmten App, mit eingeschränkten Benutzerrechten ausgeführt werden kann.
+Speicherfehler führen in vielen Betriebssystemen zu groben Sicherheitsrisiken und sind in der Lage, die Sicherheit eines Gerätes komplett zu kompromittieren. Bei Android kann ein solcher Speicherfehler durch das Sandboxing aller Applikationen auf OS-Level keinen allzu großen Schaden anrichten, da eventueller Schadcode nur im Kontext einer bestimmten App, mit eingeschränkten Benutzerrechten ausgeführt werden kann.
 \paragraph*{}
-Selbstverständlich ist auch die Applikations-Sandbox nicht zu 100\% sicher, möchte man diese aber knacken, so muss man es schaffen den gesamten Linux Kernel zu kompromittieren.
+Selbstverständlich ist auch die Applikations-Sandbox nicht zu 100 \% sicher, möchte man diese aber knacken, so muss man es schaffen, den gesamten Linux Kernel zu kompromittieren.
 	
 \subsection{Angriffsvektoren}
-Angriffsvektoren sind Pfade um ein Security Konzept zu durchdringen und so Zugriff auf gesicherte Ebenen eines Systems zu erlangen. Gerade bei einem Mobilen Betriebssystem wie Android, ist es von besonderer Wichtigkeit diese Gefahrenquellen zu kennen und soweit wie möglich zu eliminieren da Geräte welche auf Android laufen einen Großteil der Zeit angeschaltet und mit dem Internet verbunden sind. \par
-Ein weiterer Grund warum besonders mobile Endgeräte Ziel solcher Attacken sind ist die Tatsache dass Daten auf einem Smartphone oder Tablet meist aktuell sind. So werden beispielsweise neue E-Mails immer sofort via push mail heruntergeladen und gespeichert. Auch sogenannte TAN Codes, welche sich in den letzten Jahren als Autorisierung-Methode für online Überweisungen etabliert haben und via SMS übertragen werden, machen Smartphones zu einem brauchbaren Ziel für Hacker.
+Angriffsvektoren sind Pfade, um ein Security Konzept zu durchdringen und so Zugriff auf gesicherte Ebenen eines Systems zu erlangen. Gerade bei einem Mobilen Betriebssystem wie Android, ist es von besonderer Wichtigkeit, diese Gefahrenquellen zu kennen und soweit wie möglich zu eliminieren, da Geräte, welche auf Android laufen, einen Großteil der Zeit angeschaltet und mit dem Internet verbunden sind. \par
+Ein weiterer Grund, warum besonders mobile Endgeräte Ziel solcher Attacken sind, ist die Tatsache, dass Daten auf einem Smartphone oder Tablet meist aktuell sind. So werden beispielsweise neue E-Mails immer sofort via push mail heruntergeladen und gespeichert. Auch sogenannte TAN Codes, welche sich in den letzten Jahren als Autorisierung-Methode für online Überweisungen etabliert haben und via SMS übertragen werden, machen Smartphones zu einem brauchbaren Ziel für Hacker.
 \subsubsection{Social Engineering}
-Social Engineering ist eine Methode unautorisiert an Daten zu gelangen, ohne dabei Technische Änderungen am System vorzunehmen. Hierbei wird versucht den User mit Hilfe von Falschen Informationen dazu zu bringen das System zu verändern oder eine schädliche Datei herunter zu laden und dem Angreifer so selbst den Weg zu ebnen. Ein Beispiel für Social Engineering ist der sogenannte „ILOVEYOU Virus“. Dieser wurde via E-Mail verschickt und gab vor ein Liebesbrief zu sein, sodass der Benutzer ihn öffnet und selbst ausführt.
+Social Engineering ist eine Methode unautorisiert an Daten zu gelangen, ohne dabei technische Änderungen am System vorzunehmen. Hierbei wird versucht, den User mit Hilfe von falschen Informationen dazu zu bringen das System zu verändern oder eine schädliche Datei herunter zu laden und dem Angreifer so selbst den Weg zu ebnen. Ein Beispiel für Social Engineering ist der sogenannte „ILOVEYOU Virus“. Dieser wurde via E-Mail verschickt und gab vor, ein Liebesbrief zu sein, sodass der Benutzer ihn öffnet und selbst ausführt.
 Gegen das Prinzip des Social Engineerings gibt es kein brauchbares Gegenmittel, da es einzig und allein auf den Entscheidungen des Users aufbaut.
 \newpage
 \subsubsection{Drive-by Exploitation}
-Diese Angriffsmethode macht sich Bugs in vorhandener Software zu Nutzen um schadhaften Code auf dem Device auszuführen. Mit Hilfe solcher Bugs gelingt es dem Angreifer Code über beispielsweise eine Website auf das Gerät des Opfers herunterzuladen und dann auf dem Zielsystem auszuführen. Drive-by Exploitation ist vor allem auf Desktop PC Systemen weit verbreitet. Durch diverse Sicherheitsmechanismen von Android wie das Sandboxing der Apps oder die DVM (Dalvik Virtual Machine), ist es auf solchen Geräten wesentlich schwieriger schadhaften Code auszuführen und so das System nachhaltig zu beschädigen. Nichtsdestotrotz gibt aus auch auf Android eine große Anzahl an Apps welche native Software-Bibliotheken verwenden und so angreifbar gegen Drive-by Exploitation sind.
+Diese Angriffsmethode macht sich Bugs in vorhandener Software zu Nutzen, um schadhaften Code auf dem Device auszuführen. Mit Hilfe solcher Bugs gelingt es dem Angreifer Code über beispielsweise eine Website auf das Gerät des Opfers herunterzuladen und dann auf dem Zielsystem auszuführen. Drive-by Exploitation ist vor allem auf Desktop PC Systemen weit verbreitet. Durch diverse Sicherheitsmechanismen von Android, wie das Sandboxing der Apps oder die DVM (Dalvik Virtual Machine), ist es auf solchen Geräten wesentlich schwieriger schadhaften Code auszuführen und so das System nachhaltig zu beschädigen. Nichtsdestotrotz gibt es auch auf Android eine große Anzahl an Apps, welche native Software-Bibliotheken verwenden und so angreifbar gegen Drive-by Exploitation sind.
 \subsubsection{Phishing}
-Phishing Attacken werden benutzt um sensible Informationen wie Login Daten abzugreifen. Der Angreifer gibt sich dabei als offizielle Instanz aus und bewegt den Nutzer dazu seine Daten preiszugeben. Dies geschieht beispielsweise über eine gefälschte Website, welche gleich aussieht wie die echte Website, nur dass die eingegebenen Daten direkt an den Angreifer weitergeleitet werden. Phishing beinhaltet einige Aspekte des Social Engineerings, daher gibt es auch hier keine wirklich gute Möglichkeit solche Attacken zu verhindern. Auf Mobilen Geräten ist die Situation allerdings ein wenig anders, da es für die meisten online Services eine eigene App gibt, welche nur über den offiziellen App Store heruntergeladen werden kann. Daher verwenden nur wenige User die Website und laufen damit nicht Gefahr Ziel einer Phishing Attacke zu werden.
+Phishing Attacken werden benutzt, um sensible Informationen wie Login Daten abzugreifen. Der Angreifer gibt sich dabei als offizielle Instanz aus und bewegt den Nutzer dazu seine Daten preiszugeben. Dies geschieht beispielsweise über eine gefälschte Website, welche gleich aussieht wie die echte Website, nur dass die eingegebenen Daten direkt an den Angreifer weitergeleitet werden. Phishing beinhaltet einige Aspekte des Social Engineerings, daher gibt es auch hier keine wirklich gute Möglichkeit solche Attacken zu verhindern. Auf Mobilen Geräten ist die Situation allerdings ein wenig anders, da es für die meisten online Services eine eigene App gibt, welche nur über den offiziellen App Store heruntergeladen werden kann. Daher verwenden nur wenige User die Website und laufen damit nicht Gefahr Ziel einer Phishing Attacke zu werden.
 
 

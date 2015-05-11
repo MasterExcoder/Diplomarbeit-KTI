@@ -44,13 +44,13 @@
   <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>Diplomarbeit_KTI.bcf</file>
+      <file>Diplomarbeit_KTI.aux</file>
+      <file>Diplomarbeit_KTI-blx.bib</file>
     </provides>
     <requires type="dynamic">
       <file>Diplomarbeit_KTI.bbl</file>
     </requires>
     <requires type="static">
-      <file>blx-dm.def</file>
       <file>blx-compat.def</file>
       <file>biblatex.def</file>
       <file>numeric-comp.bbx</file>
@@ -63,13 +63,14 @@
     </requires>
   </internal>
   <external package="biblatex" priority="5" active="0">
-    <generic>biber</generic>
+    <generic>bibtex</generic>
     <cmdline>
-      <binary>biber</binary>
+      <binary>bibtex</binary>
+      <option>-min-crossrefs 2</option>
       <infile>Diplomarbeit_KTI</infile>
     </cmdline>
     <input>
-      <file>Diplomarbeit_KTI.bcf</file>
+      <file>Diplomarbeit_KTI.aux</file>
     </input>
     <output>
       <file>Diplomarbeit_KTI.bbl</file>
@@ -78,10 +79,14 @@
       <file>Diplomarbeit_KTI.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>Diplomarbeit_KTI.bcf</file>
+      <file>Diplomarbeit_KTI.aux</file>
+      <file>Diplomarbeit_KTI-blx.bib</file>
     </requires>
     <requires type="editable">
       <file>bibliography.bib</file>
+    </requires>
+    <requires type="static">
+      <file>biblatex.bst</file>
     </requires>
   </external>
 </requests>

@@ -51,8 +51,8 @@
 
 \include{leerseite}
 %\chapter{Quellenverzeichnis}
-\MakeBibliography
-\include{leerseite}
+%\MakeBibliography
+\printbibliography[heading=bibintoc]
 %\include{Kapitel/abbildungsverzeichnis}
 \listoffigures
 \addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
@@ -63,6 +63,7 @@
 
 \include{leerseite}
 \include{Kapitel/begleitprotokoll}
+
 
 %-----------------------ANHANG----------------------------
 \chapter{Anhang}
@@ -93,7 +94,23 @@
 \includepdf[pages=1-5]{Anhaenge/anhang4_atp.pdf}
 
 
+%---------------------------CITIATIONS--------------------------------
+\nocite{android_hardening}
 \nocite{knox_manual}
+\nocite{knox_emm_features}
+\nocite{openmobilealliance}
+\nocite{oma_device_management_v1.2}
+\nocite{oma_device_management_security}
+\nocite{oma_device_management_protocol}
+\nocite{mobileiron_appsatwork}
+\nocite{mobileiron_docsatwork}
+\nocite{mobileiron_docsatwork2}
+\nocite{mobileiron_docsatwork_datenblatt}
+\nocite{emma}
+\nocite{mobileiron_webatwork}
+\nocite{mobileiron_irgendwas_webatwork}
+\nocite{android_attack_vectors}
+\nocite{android_security}
 
 \end{document}
 

@@ -35,13 +35,13 @@
 \setcounter{tocdepth}{5}
 \setcounter{secnumdepth}{5}
 \tableofcontents
-\include{leerseite}
 
 \mainmatter
 \setcounter{page}{1}
 \include{Kapitel/einleitung}
 \include{Kapitel/studie}
 \include{Kapitel/varianten}
+\include{leerseite}
 \include{Kapitel/auswahl_konzept}
 \include{Kapitel/ergebnis}
 \include{Kapitel/lessons_learned}
@@ -49,14 +49,18 @@
 
 
 \include{leerseite}
-\chapter{Quellenverzeichnis}
-\printbibliography[heading=bibintoc]
+%\chapter{Quellenverzeichnis}
+\MakeBibliography
 \include{leerseite}
-\include{Kapitel/abbildungsverzeichnis}
+%\include{Kapitel/abbildungsverzeichnis}
+\listoffigures
+\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
 \include{leerseite}
-\include{Kapitel/tabellenverzeichnis}
+%\include{Kapitel/tabellenverzeichnis}
+\listoftables
+\addcontentsline{toc}{chapter}{Tabellenverzeichnis}
 
-
+\include{leerseite}
 \include{Kapitel/begleitprotokoll}
 
 \include{Kapitel/anhang}
